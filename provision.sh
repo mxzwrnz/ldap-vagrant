@@ -10,6 +10,8 @@ config_admin_password=password
 
 echo "127.0.0.1 $config_fqdn" >>/etc/hosts
 
+apt-get update
+
 apt-get install -y --no-install-recommends vim
 cat >/etc/vim/vimrc.local <<'EOF'
 syntax on
